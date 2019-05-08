@@ -10,9 +10,9 @@
 ### Director
 
 1. Create a new command :
-1.1 Commande type : `Notification Plugin Command`
-1.2 Command : `/etc/icinga2/scripts/slack-service-notification.sh`
-1.3 Arguments : you need to make the correspondance between icinga2 and the arguments used in the script
+   1. Commande type : `Notification Plugin Command`
+   2. Command : `/etc/icinga2/scripts/slack-service-notification.sh`
+   3. Arguments : you need to make the correspondance between icinga2 and the arguments used in the script
 2. Create a Notification template with the previous created command
 3. Créate a rule to apply this template  on the type you want (`Services` or `Host`)
 3.1 You can create specific rules to assign this notification
