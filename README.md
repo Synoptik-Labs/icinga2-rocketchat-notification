@@ -11,7 +11,7 @@
 
 1. Create a new command :
    1. Commande type : `Notification Plugin Command`
-   2. Command : `/etc/icinga2/scripts/slack-service-notification.sh`
+   2. Command : `/etc/icinga2/scripts/rocketchat-service-notification.sh`
    3. Arguments : you need to make the correspondance between icinga2 and the arguments used in the script
 2. Create a Notification template with the previous created command
 3. Créate a rule to apply this template  on the type you want (`Services` or `Host`)
@@ -20,15 +20,15 @@
 
 |Argument|Value|
 |---|---|
-|-d|$icinga.long_date_time$|
-|-e|$service.name$|
-|-l|$host.name$|
-|-n|$host.display_name$|
-|-o|$service.output$|
-|-r|$user.email$|
-|-s|$service.state$|
-|-t|$notification.type$|
-|-u|$service.display_name$|
+|-d|`$icinga.long_date_time$`|
+|-e|`$service.name$`|
+|-l|`$host.name$`|
+|-n|`$host.display_name$`|
+|-o|`$service.output$`|
+|-r|`$user.email$`|
+|-s|`$service.state$`|
+|-t|`$notification.type$`|
+|-u|`$service.display_name$`|
 
 ### CLI
 
